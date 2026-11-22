@@ -44,6 +44,10 @@ th:first-child,td:first-child{text-align:left}th{background:#E8EDEB;font-size:13
 ol.st{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
 ol.st li{counter-increment:s;background:#fff;border:1px solid var(--line);padding:12px 14px 12px 52px;position:relative;border-radius:4px}
 ol.st li:before{content:counter(s);position:absolute;left:12px;top:10px;width:28px;height:28px;border-radius:50%;background:var(--yel);font-weight:800;text-align:center;line-height:28px}
+ol.st li[data-tip]{cursor:help}
+ol.st li[data-tip]:after{content:attr(data-tip);position:absolute;z-index:10;left:52px;right:14px;bottom:calc(100% - 4px);padding:10px 12px;background:var(--ink);color:#fff;border-radius:4px;font-size:13px;line-height:1.35;box-shadow:0 6px 18px rgba(27,36,48,.18);opacity:0;visibility:hidden;transform:translateY(4px);transition:.15s ease;pointer-events:none}
+ol.st li[data-tip]:hover:after,ol.st li[data-tip]:focus:after{opacity:1;visibility:visible;transform:translateY(0)}
+ol.st li[data-tip]:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
 footer{margin:46px 0 30px;color:var(--mut);font-size:13px}
 .signature{margin-top:24px;padding:22px;background:var(--ink);color:#fff;border-radius:6px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .signature small{display:block;color:#C9D2D8;margin-bottom:2px}.signature strong{display:block;font-size:20px}.signature span{color:#C9D2D8}
@@ -98,14 +102,14 @@ footer{margin:46px 0 30px;color:var(--mut);font-size:13px}
 <h2>4. Qué hay que hacer para llegar al escenario ideal</h2>
 <p class="sub">Ocho pasos, en este orden.</p>
 <ol class="st">
-<li><b>Calificar por cola larga, no por envíos totales.</b> Con el 6% de despachos a pueblos, una empresa de 500 envíos al día aporta unas 30 cajas. Una ancla de 1.000 cajas exige muchos envíos totales o un reparto muy disperso.</li>
-<li><b>Completar los contactos.</b> Hoy hay 26 correos verificados en 12 empresas. Enriquecer primero las 20 de la primera ola.</li>
-<li><b>Lanzar la "Radiografía de cola larga".</b> La empresa sube sus destinos y recibe un informe contra la malla. Postcargo recibe su volumen real.</li>
-<li><b>Preparar el kit de homologación.</b> Habilitación de carga, pólizas, RUT, estados financieros, referencias y política de datos, listo antes del primer contacto.</li>
-<li><b>Ofrecer una prueba de 30 días</b> en 1 a 3 regiones, con metas de entrega, estados actualizados y reclamos.</li>
-<li><b>Conectar Siscore con el sistema del cliente</b> para rastrear con su número de pedido o factura.</li>
-<li><b>Planear capacidad.</b> Con 3.000 cajas por día, definir acopio, rutas y personal por base antes de firmar.</li>
-<li><b>Asignar un responsable comercial por ancla</b> y un reporte semanal: reuniones, pruebas y cajas por día.</li>
+<li tabindex="0" data-tip="Prioriza empresas que distribuyen muchas cajas a destinos difíciles, aunque no tengan el mayor volumen total."><b>Calificar por cola larga, no por envíos totales.</b> Con el 6% de despachos a pueblos, una empresa de 500 envíos al día aporta unas 30 cajas. Una ancla de 1.000 cajas exige muchos envíos totales o un reparto muy disperso.</li>
+<li tabindex="0" data-tip="Consigue y verifica los correos y responsables correctos de las empresas prioritarias para iniciar conversaciones comerciales."><b>Completar los contactos.</b> Hoy hay 26 correos verificados en 12 empresas. Enriquecer primero las 20 de la primera ola.</li>
+<li tabindex="0" data-tip="Convierte el mapa de destinos del cliente en un informe que muestre dónde puede mejorar la cobertura y qué volumen existe."><b>Lanzar la "Radiografía de cola larga".</b> La empresa sube sus destinos y recibe un informe contra la malla. Postcargo recibe su volumen real.</li>
+<li tabindex="0" data-tip="Deja listos los documentos y requisitos necesarios para contratar y activar rápidamente una cuenta nueva."><b>Preparar el kit de homologación.</b> Habilitación de carga, pólizas, RUT, estados financieros, referencias y política de datos, listo antes del primer contacto.</li>
+<li tabindex="0" data-tip="Prueba el servicio por un mes en unas pocas regiones para medir entregas, seguimiento y reclamos antes de contratar a escala."><b>Ofrecer una prueba de 30 días</b> en 1 a 3 regiones, con metas de entrega, estados actualizados y reclamos.</li>
+<li tabindex="0" data-tip="Integra el seguimiento de cada envío para que el cliente lo encuentre con su pedido o factura, sin consultar sistemas separados."><b>Conectar Siscore con el sistema del cliente</b> para rastrear con su número de pedido o factura.</li>
+<li tabindex="0" data-tip="Prepara almacenamiento, rutas y personal en las bases necesarias para atender el volumen antes de firmar el contrato."><b>Planear capacidad.</b> Con 3.000 cajas por día, definir acopio, rutas y personal por base antes de firmar.</li>
+<li tabindex="0" data-tip="Nombra una persona responsable de cada cuenta y revisa semanalmente avances, pruebas y cajas enviadas."><b>Asignar un responsable comercial por ancla</b> y un reporte semanal: reuniones, pruebas y cajas por día.</li>
 </ol>
 
 <h2>5. Decisiones que se piden hoy</h2>
